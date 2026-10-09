@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function Footer({ className } : {className: string}) {
+export function Footer({ className = "" } : {className?: string}) {
 
     return (
         <footer className={`${className} flex justify-center`}>
