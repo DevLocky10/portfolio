@@ -1,11 +1,12 @@
 import { RouterProvider } from "react-router"
 import {createBrowserRouter } from "react-router-dom"
+import { HomePage } from "./features/Home"
 
 function App() {
 
   const router = createBrowserRouter(
     [
-      { path: "/", element: <>Home page...</> },
+      { path: "/", element: <HomePage /> },
       { path: "/projects", element: <>Projects page...</> },
       { path: "/projects/:id", element: <>Project dedicated page...</> },
       { path: "/labs", element: <>Labs page...</> },
