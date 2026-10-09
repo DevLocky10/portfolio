@@ -29,10 +29,15 @@
 
   html {
     font-size: 16px;
+    font-family: 'Portfolio_JetBrainsMono';
     @apply text-black font-semibold;
   }
 
   body {
     @apply bg-neutral;
+  }
+
+  h1, h2, h3, h4, .titled {
+    font-family: 'Portfolio_Roboto';
   }
 }

@@ -3,7 +3,7 @@ function App() {
 
   return (
     <>
-    bonjour...
+      <span className="titled">Bonjour...</span>
     </>
   )
 }
