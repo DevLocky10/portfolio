@@ -1,1 +1,38 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-primary-50: #b7efc5;
+  --color-primary: #92e6a7;
+  --color-primary-150: #6ede8a;
+  --color-secondary-50: #e0aaff;
+  --color-secondary: #c77dff;
+  --color-secondary-150: #9d4edd;
+  --color-neutral-50: #cccccc;
+  --color-neutral: #bbbbbb;
+  --color-neutral-150: #aaaaaa;
+}
+
+@layer base{
+  @font-face {
+    font-family: 'Portfolio_Roboto';
+    src: url('./assets/fonts/Roboto/Roboto.ttf');
+  }
+
+  @font-face {
+    font-family: 'Portfolio_JetBrainsMono';
+    src: url('./assets/fonts/JetBrains_Mono/JetBrainsMono.ttf');
+  }
+
+  * {
+    @apply p-0 m-0 box-border ;
+  }
+
+  html {
+    font-size: 16px;
+    @apply text-black font-semibold;
+  }
+
+  body {
+    @apply bg-neutral;
+  }
+}
