@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { NavLink } from "react-router-dom";
 
-export function Header({ className }: {className: ReactNode}) {
+export function Header({ className }: {className: string}) {
 
     <header className={`${className} flex justify-between items-center`}>
         <div className="flex items-center gap-1.5">
