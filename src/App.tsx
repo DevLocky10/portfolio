@@ -1,5 +1,5 @@
 import { RouterProvider } from "react-router"
-import { BrowserRouter, createBrowserRouter } from "react-router-dom"
+import {createBrowserRouter } from "react-router-dom"
 
 function App() {
 
