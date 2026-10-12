@@ -9,7 +9,7 @@ interface CodeBoxProps {
 export function CodeBox({children, className= "", title= "Code"}: CodeBoxProps) {
 
     return (
-        <article className={`${className} text-neutral bg-gray-950 rounded-xl border border-neutral-50 w-full max-w-4xl`}>
+        <article className={`${className} text-neutral bg-gray-950 rounded-xl border border-neutral-50 w-full`}>
             <header className="flex justify-between px-4 py-2 border-b border-neutral-50">
                 <div>{title}</div>
                 <div className="flex gap-2 items-center">
