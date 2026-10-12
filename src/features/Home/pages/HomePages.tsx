@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CodeBox } from "../../../components";
 import Logo from "./../../../assets/imgs/logo.png"
 
@@ -6,20 +7,28 @@ export function HomePage() {
     return (
         <>
             <section className="flex gap-2 justify-center">
-                <CodeBox title="Profile">
-                    Je suis développeur en formation, spécialisé dans le développement d’applications, avec un intérêt particulier pour la conception de logiciels, l’architecture des systèmes et les technologies web.
+                <CodeBox className="flex flex-col" title="Profile">
+                    <p>
+                        Je suis développeur d’applications, animé par une curiosité qui me pousse à comprendre comment les systèmes fonctionnent, 
+                        du code jusqu’aux mécanismes qui se cachent derrière.
 
-                    J’aime comprendre comment les choses fonctionnent, aller au-delà de la simple utilisation des outils et transformer des idées en solutions concrètes. Du développement d’interfaces à la conception de la logique métier, j’accorde une importance particulière à la qualité du code, à la structure des projets et à la recherche de solutions efficaces.
+                        J’aime explorer, expérimenter et comprendre le *pourquoi* avant de chercher le *comment*. 
+                        Du développement logiciel à l’architecture des systèmes, 
+                        je cherche à construire des bases solides pour concevoir des applications fiables, bien structurées et évolutives.
 
-                    Au fil de mon apprentissage, je développe mes compétences en JavaScript, TypeScript, React, PHP et SQL, tout en explorant les concepts qui permettent de concevoir des applications fiables, maintenables et évolutives.
-
-                    Pour moi, programmer ne consiste pas simplement à écrire du code, mais à analyser un problème, comprendre ses enjeux et concevoir une solution adaptée.
-
-                    Mon objectif est de devenir un ingénieur logiciel capable de concevoir et de développer des systèmes complets, de relever des défis techniques et de donner vie à des projets qui ont une réelle utilité.
-
-                    Chaque projet est une occasion d'apprendre, d'expérimenter et de repousser mes limites.
+                        Mon parcours est avant tout une démarche d’apprentissage continu, 
+                        guidée par une envie constante d’aller plus loin que ce que je connais déjà.
+                    </p>
+                    <div className="w-full flex gap-2 mt-4">
+                        <Link className=" flex items-center justify-center bg-secondary-150 hover:bg-secondary h-12 py-2 px-4 text-gray-950 text-center w-full rounded-lg" to={"/"}>
+                            <button className="cursor-pointer">Télécharger le CV</button>
+                        </Link>
+                        <Link className=" flex items-center justify-center bg-primary-150 hover:bg-primary h-12 py-2 px-4 text-gray-950 text-center w-full rounded-lg" to={"/projects"}>
+                            <button className="cursor-pointer">Voir les projets</button>
+                        </Link>
+                    </div>
                 </CodeBox>
-                <img className="rounded-full border-neutral-50" src={Logo} alt="DevLocky Logo" />
+                <img className="h-full aspect-square rounded-full border-neutral-50" src={Logo} alt="DevLocky Logo" />
             </section>
         </>
     )
