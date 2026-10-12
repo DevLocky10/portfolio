@@ -1,10 +1,8 @@
-import { MainLayout } from "../../../components";
-
 export function HomePage() {
 
     return (
-        <MainLayout>
-            
-        </MainLayout>
+        <>
+            Home Page Is Prepar
+        </>
     )
 }
