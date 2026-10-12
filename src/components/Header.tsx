@@ -9,7 +9,7 @@ export function Header({ className = "" }: {className?: string}) {
                 <img className="h-12 aspect-square rounded-full" src={Logo} alt="DevLocky10 Logo" />
                 <h1 className="text-base font-bold italic">DevLocky10</h1>
             </div>
-            <nav className="flex items-center gap-y-4">
+            <nav className="flex items-center gap-x-4">
                 <NavLink to={"/"} >Profile</NavLink>
                 <NavLink to={"/projects"} >Projets</NavLink>
                 <NavLink to={"/labs"} >Labs</NavLink>
